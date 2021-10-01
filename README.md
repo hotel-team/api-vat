@@ -1,4 +1,4 @@
-# Instalacja
+### Instalacja
 
 **Po pobraniu folderu na pulpit, otwórz go w cmd, a następnie wpisz:**
 `npm install`
