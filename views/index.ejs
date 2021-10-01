@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    
+    <div class="form">
+        <h1>Oblicznie stawki vat</h1>
+    <form action="/oblicz" method="post">
+        <input type="text" name="produkt" placeholder="Nazwa Produktu" class="input">
+        <input type="text" name="cena" placeholder="Cena netto" class="input">
+        <button type="submit" class="btn">Oblicz</button>
+    </form>
+    <% if(locals.wynik){ %>
+        <p>
+            Wynik: <%- wynik %> 
+        </p>
+    <% } %>
+    </div>
+</body>
+</html>
